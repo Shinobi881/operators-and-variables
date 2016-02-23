@@ -1,66 +1,82 @@
 /*! strings v0.0.0 - MIT license */
 'use strict';
 
-// THIS FUNCTION IS AN EXAMPLE, DO NOT TOUCH
-var stringExample = function () {
-   // return the string 'this is just an example'
-   return 'this is just an example';
-}
 
-// YOUR CODE BELOW, VARIABLES ARE NOT ALLOWED FOR ANY PROBLEMS
-// THE POINT HERE IS TO IMPROVE YOUR UNDERSTANDING OF STRINGS AS A RAW DATA TYPE
-var stringIndex = function () {
-  // return the 3 letter of the string below
-  'the dream of Californication'
-  return 'the dream of Californication'[2];
+//////////////////////////////////////////////////////
+// YOUR CODE BELOW, TIME TO GET SOME VARIABLE PRACTICE
+//////////////////////////////////////////////////////
 
-}
-
-var stringMaker = function () {
-  // bridge and return the two strings below using string concatenation
- return 'California, rest in peace...' + ' Simutaneous release...';
+var numbersVariables = function () {
+  // Number-1: 4234 
+  // Number-2: 07080
   
+  // 1. Assign the first number to a variable 'num1'
+  // 2. Assign the second number to a variable 'num2'
+  // 3. Assign to a variable 'difference' the difference of num1 and num2
+  // 3. Return 'differece'
+  return 
 }
 
-var stringSpecialChar = function () {
-  // fix an return the string below
-    // 'can't stop, won't stop';
-  return 'can\'t stop, won\'t stop'
-}
-
-var stringMultiLine = function () {
-  // Format and return the string so it will print on 3 lines
-  // This must all be done in one set of quotes
-  'string on line 1, string on line 2, string on line 3';
-  return 'string on line 1,\n string on line 2,\n string on line 3';
+var stringsVariables = function () {
+  // String-1: 'California, rest in peace...' 
+  // String-2: ' Simutaneous release...'
   
+  // 1. Assign the first string to a variable 'str1'
+  // 2. Assign the second number to a variable 'str2'
+  // 3. Assign to a variable 'danniCalifornia' the concatenation of str1 and str2
+  // 3. Return 'danniCalifornia'
+  return 
 }
 
-var stringEquality = function () {
-  // return, whether or not the string below is of a string data type. 
-
-  // Example: return [special operator] 'string from below';
-  '35234235^%@^%@^%$@^$%@^#';
+// Don't touch line 33
+var diffOfNums = numbersVariables();
+var modulusVariables = function () {
+  // Number-1: // use 'diffOfNums' here
+  // Number-2: 37 
   
-  return typeof '35234235^%@^%@^%$@^$%@^#';
+  // 1. Calculate the modulus of the 2 numbers 
+  // 2. Multiply the remainder by 500
+  // 3. Return the remainder % 792
+  return
 }
 
-var stringCount = function () {
-  // Return the number of characters in the string below
-  'You can blame it on rain.';
-  return 'You can blame it on rain.'.length;
+/////////////////////////////////////////////////
+/* 
+USE VARIABLES, PROPER DECLARATIONS AN GOOD NAMING CONVENTIONS TO MAKE THE BELOW FUNCTIONS MORE READABLE
+*/
+/////////////////////////////////////////////////
+var equal = function () {
+  // Fix the statment below then uncomment
+  // return 'make me true' = 'make me true';
 }
 
-
-var stringHelper1 = function () {
-  // Use a method on the string below to return the word 'wounded'
-  'Take time with a wounded hand';
-  return 'Take time with a wounded hand'.substring(17, 24);
+var notEqual = function () {
+  // Fix the return statement
+    // NOTE: Don't change the numbers
+  return 54604567 === 43573543897
 }
 
-var stringHelper2 = function () {
-  // Use a method to convert and return the string below into all uppercase letters
-  'Where ya going with tomorrow?';
+var stillNotEqual = function () {
+  // Fix the return statement to return properly
+    // NOTE: Don't change the values
+  return undefined == null
+}
 
-  return 'Where ya going with tomorrow?'.toUpperCase();
+var brackets = function () {
+  // Convert the number below to a string
+    // 8675309
+  // return the 4 letter
+  return (8675309).toString();
+}
+
+var typeOfOperator = function () {
+  // use the 'typeof' operator to return the correct data type for the value below
+    // { return: 'my type'}
+  return
+}
+
+var assignment = function () {
+  // Fix the assignment statement below then uncomment
+  // var thriller === 'Michael';
+  return thriller;
 }

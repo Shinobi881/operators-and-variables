@@ -3,201 +3,130 @@
 describe('Javascript Variables Intro', function () {
   'use strict';
 
-  describe('stringExample', function () {
-    'use strict';
+    describe('numbersVariables', function() {
 
-    it('should be a function', function () {
-      expect(stringExample).to.be.a('function');
-
-    });
-
-    it('return a string data type', function () {
-      expect(typeof stringExample()).to.equal('string');
-    });
-
-    it('the first letter should be \'t\'', function () {
-      expect(stringExample()[0]).to.equal('t');
-    });
-
-    // Add more assertions here
-  });
-
-  describe('stringIndex', function () {
-    'use strict';
-
-    it('should be a function', function () {
-      expect(stringIndex).to.be.a('function');
+      it('should return the difference of 4234 and 07080', function() {
+        var test = numbersVariables;
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('number');
+        expect(test()).to.equal(2846);
+      });
 
     });
 
-    it('should return a number', function () {
-      expect(stringIndex()).to.be.a('string');
-    });
+    describe('stringsVariables', function() {
 
-    it('should return the length of a string', function () {
-      expect(stringIndex()).to.equal('e');
-    });
+      var test = stringsVariables;
+      var testStr = 'California, rest in peace... Simutaneous release...';
 
-  });
+      it('should return a string', function () {
+        expect(test()).to.be.a('string');
+      });
 
-  describe('stringMaker', function () {
-    'use strict';
-    
-    var test = stringMaker();
-    var testStr = 'California, rest in peace... Simutaneous release...'
-
-    it('should be a function', function () {
-      expect(stringMaker).to.be.a('function');
+      it('should return the length of a string', function () {
+        expect(test().length).to.equal(51);
+      });
+      it('should quote the Red Hot Chili Peppers', function () {
+        expect(test()).to.equal(testStr);
+      });
 
     });
 
-    it('should return a string', function () {
-      expect(test).to.be.a('string');
-    });
+    describe('modulusVariables', function() {
 
-    it('should return the length of a string', function () {
-      expect(test.length).to.equal(51);
-    });
-    it('should quote the Red Hot Chili Peppers', function () {
-      expect(test).to.equal(testStr);
-    });
+      it('should return the remainder of dividing diffOfNums by 37 then some other stuff', function() {
 
-  });
+        var test = modulusVariables;
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('number');
+        expect(test()).to.equal(368);
 
-  describe('stringSpecialChar', function () {
-    'use strict';
-    
-    var test = stringSpecialChar();
-    var testStr = 'can\'t stop, won\'t stop';
-
-    it('should be a function', function () {
-      expect(stringMaker).to.be.a('function');
+      });
 
     });
 
-    it('should return a string', function () {
-      expect(test).to.be.a('string');
-    });
+    describe('equal', function() {
 
-    it('should return the length of a string', function () {
-      expect(test.length).to.equal(22);
-    });
-    it('should be a Jeff Chang title', function () {
-      expect(test).to.equal(testStr);
-    });
+      it('should determine if the two strings are equal', function() {
 
-  });
+        var test = equal;
 
-  describe('stringMultiLine', function () {
-    'use strict';
-    
-    var test = stringMultiLine();
-    var testStr = 'string on line 1,\n string on line 2,\n string on line 3';
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('boolean');
+        expect(test()).to.equal(true);
 
-    it('should be a function', function () {
-      expect(stringMaker).to.be.a('function');
+      });
 
     });
 
-    it('should return a string', function () {
-      expect(test).to.be.a('string');
-    });
+    describe('notEqual', function() {
 
-    it('should return the length of a string', function () {
-      expect(test.length).to.equal(54);
-    });
-    it('should be a print on 3 separate lines', function () {
-      expect(test).to.equal(testStr);
-    });
+      it('should evaluate the comparison to true', function() {
 
-  });
+        var test = notEqual;
 
-  describe('stringEquality', function () {
-    'use strict';
-    
-    var test = stringEquality();
-    var testStr = '35234235^%@^%@^%$@^$%@^#';
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('boolean');
+        expect(test()).to.equal(true);
 
-    it('should be a function', function () {
-      expect(stringEquality).to.be.a('function');
+      });
 
     });
-    
-    it('should return the length of a string', function () {
-      expect(test.length).to.equal(6);
+
+    describe('stillNotEqual', function() {
+
+      it('null and undefined are not the same', function() {
+
+        var test = stillNotEqual;
+
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('boolean');
+        expect(test()).to.equal(false);
+
+      });
+
     });
 
-    it('should return a string type', function () {
-      expect(test).to.equal('string');
+    describe('brackets', function() {
+
+      it('should return the 4 character in the string', function() {
+
+        var test = brackets;
+
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('string');
+        expect(test()).to.equal('5');
+
+      });
+
     });
 
-    
+    describe('typeOfOperator', function() {
 
-  });
+      it('should use the typof operator properly', function() {
 
-  describe('stringCount', function () {
-    'use strict';
-    
-    var test = stringCount;
-    var testStr = 'string on line 1,\n string on line 2,\n string on line 3';
+        var test = typeOfOperator;
 
-    it('should be a function', function () {
-      expect(test).to.be.a('function');
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('string');
+        expect(test()).to.equal('object');
+
+      });
+
     });
 
-    it('should return a number', function () {
-      expect(test()).to.be.a('number');
+    describe('assignment', function() {
+
+      it('should evaluate to return \'Michael\'', function() {
+
+        var test = assignment;
+
+        expect(test).to.be.a('function');
+        expect(test()).to.be.a('string');
+        expect(test()).to.equal('Michael');
+
+      });
+
     });
-
-    it('should return the length of a string', function () {
-      expect(test()).to.equal(25);
-    });
-  });
-
-  describe('stringHelper1', function () {
-    'use strict';
-    
-    var test = stringHelper1;
-    var testStr = 'string on line 1,\n string on line 2,\n string on line 3';
-
-    it('should be a function', function () {
-      expect(test).to.be.a('function');
-    });
-
-    it('should return a number', function () {
-      expect(test()).to.be.a('string');
-    });
-
-    it('should return the length of a string', function () {
-      expect(test().length).to.equal(7);
-    });
-
-    it('should cut and return \'wounded\' from the string', function () {
-      expect(test()).to.equal('wounded');
-    });
-  });
-
-  describe('stringHelper2', function () {
-    'use strict';
-    
-    var test = stringHelper2;
-    var testStr = 'string on line 1,\n string on line 2,\n string on line 3';
-
-    it('should be a function', function () {
-      expect(test).to.be.a('function');
-    });
-
-    it('should return a number', function () {
-      expect(test()).to.be.a('string');
-    });
-
-    it('should return the length of a string', function () {
-      expect(test().length).to.equal(29);
-    });
-
-    it('should return a string in all caps from the string', function () {
-      expect(test().substring(9, 14)).to.equal('GOING');
-    });
-  });
     
 });
