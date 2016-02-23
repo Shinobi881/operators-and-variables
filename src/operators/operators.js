@@ -7,31 +7,56 @@
 // THE POINT HERE IS TO IMPROVE YOUR UNDERSTANDING OF NUMBERS AS A RAW DATA TYPE
 //////////////////////////////////
 
-var numberChecker = function () {
-   // return any number below
-   return 45245245245425423;
-}
-
-var numberSum = function () {
-  // Return the sum of the numbers below
+var plusOperatorNumbers = function () {
+   // Return the sum of the numbers below
     // 4234 and 07080
-  return 4234 + 07080
+   return 
 }
 
-var numberModulus = function () {
+var plusOperatorStrings = function () {
+  // Concatenate the strings below and return on string
+    //'California, rest in peace...', ' Simutaneous release...'
+  return 
+}
+
+var modulus = function () {
   // Return the remainder of the quotient of the 2 numbers below
-    // 11314 % 37
-  return 11314 % 37
+    // 11314,  37
+  return
 }
 
-var numberHelper1 = function () {
-  // Find and use a javascript method to convert the string below to a number and return it
-    // '8675309'
-  return Number('8675309');
+var equal = function () {
+  // Fix the statment below then uncomment
+  // return 'make me true' = 'make me true';
 }
 
-var numberHelper2 = function () {
+var notEqual = function () {
+  // Fix the return statement
+    // NOTE: Don't change the numbers
+  return 54604567 === 43573543897
+}
+
+var stillNotEqual = function () {
+  // Fix the return statement to return properly
+    // NOTE: Don't change the values
+  return undefined == null
+}
+
+var brackets = function () {
   // Convert the number below to a string
     // 8675309
+  // return the 4 letter
   return (8675309).toString();
+}
+
+var typeOfOperator = function () {
+  // use the 'typeof' operator to return the correct data type for the value below
+    // { return: 'my type'}
+  return
+}
+
+var assignment = function () {
+  // Fix the assignment statement below then uncomment
+  // var thriller === 'Michael';
+  return thriller;
 }
